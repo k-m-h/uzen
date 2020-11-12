@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Logo from '@components/Logo'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Uzen Resaurant</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
