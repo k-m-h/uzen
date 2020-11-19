@@ -16,7 +16,7 @@ export default function Home() {
         title="Uzen"
         subTitle="Japanese Cuisine"
       />
-      <section >
+      <section>
         <div className="hours">
           <h4>Take-out Hours</h4>
           <p><span>Monday</span>	<span>11:00AM – 2:00PM, 5:00PM – 8:000PM</span></p>
@@ -37,9 +37,12 @@ export default function Home() {
           <p>New Years Eve and Day Thurs 12/31- Sun 1/3 </p>
         </div>
       </section>
-      <div className="message">
-        <h4>Thank you for your continued support!</h4>
-      </div>
+
+      <section>
+        <div className="message">
+          <h4>Thank you for your continued support!</h4>
+        </div>
+      </section>
       </main>
 
       <Footer/>
