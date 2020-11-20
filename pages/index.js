@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '@components/Header'
 // import Logo from '@components/Logo'
 import Footer from '@components/Footer'
+import Hours from '@components/Hours'
 
 export default function Home() {
   return (
@@ -17,20 +18,10 @@ export default function Home() {
         subTitle="Japanese Cuisine"
       />
       <section>
-        <div className="hoursDinein">
-          <h4>Dine-in Hours</h4>
-          <span>Currently Unavailable</span>
-        </div>
-        <div className="hoursTakeout">
-          <h4>Take-out Hours</h4>
-          <p><span>Monday</span>	<span>11:00AM – 1:00PM, 5:00PM – 8:000PM</span></p>
-          <p><span>Tuesday</span>	<span>11:00AM – 1:00PM, 5:00PM – 8:000PM</span></p>
-          <p><span>Wednesday</span>	<span>11:00AM – 1:00PM, 5:00PM – 8:000PM</span></p>
-          <p><span>Thursday</span>	<span>11:00AM – 1:00PM, 5:00PM – 8:000PM</span></p>
-          <p><span>Friday</span>	<span>11:00AM – 1:00PM, 5:00PM – 8:000PM</span></p>
-          <p><span>Saturday</span>	<span>5:00PM–8:00PM</span></p>
-          <p><span>Sunday</span>	<span>Closed</span></p>
-        </div>
+        <Hours
+          dineIn={false}
+          takeOut={true}
+        />
         <div className="holidays">
           <h4>Upcoming Holiday Closures</h4>
           <p>Thanksgiving Day Thurs 11/26</p>
