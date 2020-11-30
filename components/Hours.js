@@ -1,6 +1,7 @@
 
 
 export default function Hours({dineIn, takeOut}) {
+  const unavailableContent = <span>Currently Unavailable</span>;
   const dineInContent = dineIn ?
     <>
       <p><span>Monday</span>	<span>5:00PM – 8:00PM</span></p>
@@ -10,7 +11,7 @@ export default function Hours({dineIn, takeOut}) {
       <p><span>Saturday</span>	<span>5:00PM – 8:00PM</span></p>
       <p><span>Sunday</span>	<span>Closed</span></p>
     </> :
-    <span>Currently Unavailable</span>;
+    unavailableContent;
 
   const takeOutContent = takeOut ?
     <>
@@ -22,7 +23,7 @@ export default function Hours({dineIn, takeOut}) {
       <p><span>Saturday</span>	<span>5:00PM–8:00PM</span></p>
       <p><span>Sunday</span>	<span>Closed</span></p>
     </> :
-    <span>Currently Unavailable</span>;
+    unavailableContent;
   return (
     <hours>
       <div>
