@@ -1,22 +1,14 @@
-import Head from 'next/head'
-import Header from '@components/Header'
+
 // import Logo from '@components/Logo'
 import Footer from '@components/Footer'
 import Hours from '@components/Hours'
+import Topbar from '@components/Topbar'
 
 export default function Home() {
   return (
     <div className="container">
-
-      <Head>
-        <title>Uzen Resaurant</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Topbar/>
       <main>
-      <Header
-        title="Uzen"
-        subTitle="Japanese Cuisine"
-      />
       <section>
         <Hours
           dineIn={false}
