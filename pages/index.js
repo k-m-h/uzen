@@ -12,7 +12,7 @@ export default function Home() {
       <main>
       <section>
         <Hours
-          dineIn={false}
+          dineIn={true}
           takeOut={true}
         />
         <Holidays
