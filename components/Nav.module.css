@@ -20,16 +20,16 @@
   background-color: #dfde39;
 }
 @media screen and (min-width: 600px) {
- .nav li {
-   width: 120px;
-   border-bottom: none;
-   height: 50px;
-   line-height: 50px
- }
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px
+  }
 
  /* Option 1 - Display Inline */
- .nav li {
-   display: inline-block;
-   margin-right: -4px;
- }
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
 }
